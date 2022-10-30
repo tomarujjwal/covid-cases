@@ -1,0 +1,119 @@
+:root {
+  --color-lightest: #fad4d4;
+  --color-light: #ef9f9f;
+  --color-regular: #f47c7c;
+  --color-dark: #900d0d;
+}
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 1s linear;
+}
+body {
+  background-color: #bd4f6c;
+  background-image: linear-gradient(
+    326deg,
+    var(--color-regular) 0%,
+    var(--color-lightest) 74%
+  );
+}
+.container {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  color: var(--color-dark);
+  font-weight: 900;
+  padding: 15px 0;
+}
+.underline {
+  height: 5px;
+  width: 100vw;
+  background-color: var(--color-regular);
+  margin-bottom: 10px;
+}
+.imageDiv {
+  width: 500px;
+}
+.main-container {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.countryCase {
+  background-color: pink;
+}
+
+@media screen and (min-width: 1024px) {
+  .imageDiv {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+  .imageDiv {
+    width: 90vw;
+  }
+}
+/* table css  */
+#table-2 {
+  display: none;
+}
+.heading-2 {
+  color: var(--color-dark);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+th {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+}
+td {
+  font-weight: 700;
+}
+/* search button css  */
+.searchCountry {
+  background-color: transparent;
+}
+.form-control {
+  background-color: #ddd;
+  border: none;
+  outline: none;
+}
+.form-control:focus {
+  background-color: var(--color-lightest);
+}
+.changeSelected {
+  background-color: var(--color-regular);
+}
+.changeSelected:hover {
+  background-color: #ff6b6b;
+}
+.fa-search {
+  color: var(--color-dark);
+}
+/* date css  */
+.displaydate {
+  font-weight: 300;
+}
